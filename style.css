@@ -1,0 +1,32 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#0b1020;color:#eee;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;overflow:hidden}
+#game{display:block;width:100vw;height:100vh;background:#0b1020}
+#hud{position:fixed;inset:12px 12px auto 12px;display:flex;justify-content:space-between;gap:12px;pointer-events:none}
+#hud .left, #hud .right{background:rgba(0,0,0,.35);padding:8px 12px;border-radius:12px;backdrop-filter:blur(4px)}
+#overlay{position:fixed;inset:0;display:grid;place-items:center;text-align:center;background:rgba(0,0,0,.35);backdrop-filter:blur(2px)}
+#overlay.hidden{display:none}
+#overlay h1{margin:0 0 8px 0;font-size:48px}
+#overlay p{margin:0;font-size:18px;opacity:.9}
+
+
+#controls {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+#controls button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 32px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+.left-controls { display: flex; gap: 10px; }
+.right-controls { display: flex; gap: 10px; }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Endless Rooftops</title>
+  <link rel="preload" as="image" href="assets/player.png">
+  <link rel="preload" as="image" href="assets/swords.png">
+  <link rel="preload" as="image" href="assets/snake.png">
+  <link rel="preload" as="image" href="assets/plants.png">
+  <link rel="preload" as="image" href="assets/map.png">
+  <link rel="preload" as="image" href="assets/tall-house.png">
+  <link rel="preload" as="image" href="assets/short-house.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <div id="hud">
+    <div class="left">
+      <strong>Endless Rooftops</strong><br/>
+      Space: hold to jump higher • ← → : guide jump • R: restart
+    </div>
+    <div class="right">
+      <span id="dist">0 m</span>
+    </div>
+  
+  <div id="controls">
+    <div class="left-controls">
+      <button id="left">←</button>
+      <button id="right">→</button>
+    </div>
+    <div class="right-controls">
+      <button id="jump">⤒</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="hidden">
+    <h1 id="title">You Died</h1>
+    <p id="subtitle">Press R to restart</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
