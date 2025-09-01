@@ -30,3 +30,14 @@
 }
 .left-controls { display: flex; gap: 10px; }
 .right-controls { display: flex; gap: 10px; }
+
+#overlay button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}

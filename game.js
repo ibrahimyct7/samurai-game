@@ -364,3 +364,8 @@ function drawHousePlatform(ctx, blockX, blockY, blockWidth, blockHeight) {
   const houseImg = Math.random() < 0.5 ? shortHouseImg : tallHouseImg;
   ctx.drawImage(houseImg, blockX, blockY - (houseImg.height - blockHeight));
 }
+
+// Restart button click = press R
+document.getElementById("restartBtn").addEventListener("click", () => {
+  window.dispatchEvent(new KeyboardEvent("keydown", { key: "r" }));
+});
